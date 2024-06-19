@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intern Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/1165876da6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style></style>
+  <body>
+    <button
+      class="p-2 bg-gray-500 text-white fixed right-3 top-3"
+      onclick="showBar()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <section
+      class="sidebar fixed z-20 right-0 w-[400px] h-[80vh] mt-[50px] flex flex-col overflow-y-scroll bg-white border border-black p-3"
+      style="display: none"
+      id="sidebar_"
+    >
+      <div>
+        <h1 class="border-b-2 border-orange-500 text-bold text-xl mb-6">
+          Connect with us
+        </h1>
+        <ul class="text-3xl grid grid-cols-1 gap-4">
+          <i class="fa-brands fa-square-facebook" style="color: #1246a1"></i>
+          <i class="fa-brands fa-square-instagram" style="color: #bc3476"></i>
+          <i class="fa-brands fa-youtube" style="color: #f51505"></i>
+        </ul>
+      </div>
+      <div class="col2">
+        <h1
+          class="text-xl font-semibold uppercase border-b-2 border-orange-500"
+        >
+          Popular categories
+        </h1>
+        <div class="flex flex-col">
+          <a href="#">Business</a>
+          <a href="#">Design</a>
+          <a href="#">Pets</a>
+          <a href="#">Foods</a>
+          <a href="#">Business</a>
+          <a href="#">Pets</a>
+          <a href="#">Foods</a>
+          <a href="#">Category</a>
+        </div>
+
+        <div>
+          <h1
+            class="font-semibold uppercase text-xl border-b-2 border-orange-500 mt-10"
+          >
+            Recent Trailers
+          </h1>
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/361/994/478/fallout-4-trailer-wallpaper-preview.jpg"
+            alt=""
+            class="w-[300px] mt-4"
+          />
+          <h1 class="font-semibold text-lg">
+            Multiverse of madness trailer electric
+          </h1>
+          <p>Multiverse madness</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper">
+      <!-- semi header here -->
+      <div class="semi-header-top"></div>
+
+      <!-- magazine hero section -->
+      <header class="header">
+        <div class="magazine-header">
+          <h1>Magazine</h1>
+          <p>PROFESSIONAL | MAGAZINE | THEME</p>
+        </div>
+
+        <div class="ad-div">Your Ad Goes here</div>
+      </header>
+      <!-- nav links -->
+      <nav class="navigation-link border-b border-gray border-b-2">
+        <ul class="space-x-8">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Lifestyles</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">More</a></li>
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </ul>
+      </nav>
+
+      <!--  -->
+      <div class="mapod">
+        <div>
+          <button>The mapod NPC</button>
+        </div>
+        <div>
+          <p>Another big achievement of us</p>
+        </div>
+      </div>
+
+      <!-- image container -->
+      <div class="image-container">
+        <img src="./image.jpeg" alt="" class="rounded" />
+        <img src="./image1.jpeg" alt="" class="rounded" />
+        <img src="./image2.webp" alt="" class="rounded" />
+        <div class="overlay">
+          <div class="overlay-content">
+            <span>TECH</span>
+            <h1>How To Have A Fantastic Tech</h1>
+            <p>
+              Big Tech hunts for 11th hour deals as Austrial news codes looms
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex w-[70%] m-auto gap-12 bg-gray-100 p-8">
+        <div class="flex items-center gap-4 bg-gray-200">
+          <img
+            src="./image.jpeg"
+            alt=""
+            class="w-16 h-16 object-cover rounded"
+          />
+          <div>
+            <p class="text-sm">Tech</p>
+            <p class="text-sm">How to move a factory</p>
+            <span class="text-sm">Feb 11, 2021</span>
+          </div>
+        </div>
+        <!--  -->
+        <div class="flex items-center gap-4">
+          <img
+            src="./image.jpeg"
+            alt=""
+            class="w-16 h-16 object-cover rounded"
+          />
+          <div>
+            <p class="text-sm">Market</p>
+            <p class="text-sm">How to move a factory</p>
+            <span class="text-sm">Feb 11, 2021</span>
+          </div>
+        </div>
+        <!--  -->
+        <div class="flex items-center gap-4">
+          <img
+            src="./image.jpeg"
+            alt=""
+            class="w-16 h-16 object-cover rounded"
+          />
+          <div>
+            <p class="text-sm">Lifestyle</p>
+            <p class="text-sm">How to move a factory</p>
+            <span class="text-sm">Feb 11, 2021</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- latest news section -->
+      <section class="latest-news flex justify-between w-[70%] m-auto mt-20">
+        <!--  -->
+        <div class="w-[70%]">
+          <div
+            class="border-b border-black border-b-2 flex items-center justify-between"
+          >
+            <h1 class="font-semibold text-2xl">Latest news</h1>
+            <div class="flex gap-4 items-center space-x-4">
+              <a href="#" class="p-1 bg-purple-500 text-white">Food</a>
+              <a href="#">Blog</a>
+              <a href="#">Food</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="flex gap-5 mt-6">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/3756167/pexels-photo-3756167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                class="rounded"
+              />
+              <h1 class="font-semibold text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                cupiditate dolorem porro!
+              </p>
+
+              <div
+                class="w-full h-[90px] flex items-center justify-center text-2xl bg-gray-400 text-white"
+              >
+                ADS
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex gap-3">
+                <img
+                  src="https://images.pexels.com/photos/7699352/pexels-photo-7699352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="w-20 h-20 object-cover rounded"
+                />
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h1>
+              </div>
+              <!--  -->
+              <div class="flex gap-3">
+                <img
+                  src="https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="w-20 h-20 object-cover rounded"
+                />
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h1>
+              </div>
+              <!--  -->
+              <div class="flex gap-3">
+                <img
+                  src="https://images.pexels.com/photos/571249/pexels-photo-571249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="w-20 h-20 object-cover rounded"
+                />
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </section>
+
+      <section class="popular-news w-[70%] m-auto mt-20">
+        <h1 class="uppercase font-semibold text-2xl mb-10">Popular news</h1>
+
+        <div class="flex items-center justify-between gap-5 mt-5">
+          <img
+            src="https://images.pexels.com/photos/3856050/pexels-photo-3856050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="w-[320px] rounded"
+          />
+          <img
+            src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="w-[320px] rounded"
+          />
+          <img
+            src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="w-[320px] rounded"
+          />
+        </div>
+      </section>
+
+      <section
+        class="featured-news flex justify-between items-center w-[70%] m-auto mt-20"
+      >
+        <div class="col1">
+          <h1
+            class="text-xl font-semibold uppercase border-b-2 border-orange-500 mb-10"
+          >
+            Featured News - Gallery
+          </h1>
+          <img src="./image.jpeg" alt="" class="w-[610px]" />
+          <div class="flex gap-2 items-center mt-2">
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+            <img
+              src="./image.jpeg"
+              alt=""
+              class="w-20 h-20 object-cover rounded"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="trending-article w-[70%] m-auto mt-20">
+        <h1
+          class="uppercase font-semibold text-xl border-b-2 border-orange-500 mb-10"
+        >
+          Trending articles
+        </h1>
+        <div class="flex justify-between">
+          <div class="">
+            <div class="flex items-center gap-4 mt-3">
+              <img src="./image.jpeg" alt="" class="w-[300px] rounded" />
+              <div>
+                <h1 class="font-semibold text-lg">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  esse earum in.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center gap-4 mt-3">
+              <img src="./image.jpeg" alt="" class="w-[300px] rounded" />
+              <div>
+                <h1 class="font-semibold text-lg">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  esse earum in.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center gap-4 mt-3">
+              <img src="./image.jpeg" alt="" class="w-[300px] rounded" />
+              <div>
+                <h1 class="font-semibold text-lg">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  esse earum in.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex items-center gap-4 mt-3 mb-[120px]">
+              <img src="./image.jpeg" alt="" class="w-[300px] rounded" />
+              <div>
+                <h1 class="font-semibold text-lg">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  esse earum in.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1
+              class="text-xl uppercase font-semibold border-b-2 border-orange-500"
+            >
+              Instagram feeds
+            </h1>
+            <div class="grid grid-cols-3 gap-4 mt-3">
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+              <img
+                src="./image.jpeg"
+                alt=""
+                class="w-20 h-20 object-cover rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <h2>MAGAZINE</h2>
+          <p>PROFESSIONAL | MAGAZINE | THEME</p>
+        </div>
+        <div class="footer-content">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis esse
+            earum in.
+          </p>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2023 your company . All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function showBar() {
+      const sidebar = document.getElementById("sidebar_");
+      if (sidebar.style.display == "none") {
+        sidebar.style.display = "block";
+      } else {
+        sidebar.style.display = "none";
+      }
+    }
+  </script>
+</html>
